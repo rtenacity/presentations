@@ -35,6 +35,7 @@ jobs:
       - name: Setup Bun Runtime
         uses: antongolub/action-setup-bun@v1
         with:
+          bun-version: 0.7.3
           bun-repo: "oven-sh/bun"
           cache: true
 
