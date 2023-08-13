@@ -1,0 +1,17 @@
+{
+	"name": "databases-with-orms",
+	"type": "module",
+	"scripts": {
+		"dev": "slidev --open"
+	},
+	"devDependencies": {
+		"bun-types": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	},
+	"dependencies": {
+		"@slidev/cli": "^0.42.7",
+		"@slidev/theme-default": "^0.21.2"
+	}
+}
