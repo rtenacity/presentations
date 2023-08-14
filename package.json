@@ -1,7 +1,11 @@
 {
 	"name": "presentations",
+	"scripts": {
+		"build": "bun run bin/build.tsx"
+	},
 	"devDependencies": {
-		"bun-types": "latest"
+		"bun-types": "latest",
+		"typed-html": "^3.0.1"
 	},
 	"peerDependencies": {
 		"typescript": "^5.0.0"
