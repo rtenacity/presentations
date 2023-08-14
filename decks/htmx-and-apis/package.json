@@ -2,7 +2,8 @@
 	"name": "htmx-and-apis",
 	"type": "module",
 	"scripts": {
-		"dev": "slidev --open"
+		"dev": "slidev --open",
+		"build": "slidev build"
 	},
 	"devDependencies": {
 		"bun-types": "latest"

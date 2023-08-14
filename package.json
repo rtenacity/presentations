@@ -1,8 +1,5 @@
 {
 	"name": "presentations",
-	"workspaces": [
-		"decks/*"
-	],
 	"devDependencies": {
 		"bun-types": "latest"
 	},
@@ -10,7 +7,7 @@
 		"typescript": "^5.0.0"
 	},
 	"type": "module",
-	"dependencies": {
-		"@slidev/cli": "^0.42.7"
-	}
+	"workspaces": [
+		"decks/*"
+	]
 }
