@@ -12,6 +12,9 @@ const build = (deck: string) =>
 			`/${deck}`,
 			"--out",
 			`../../dist/${deck}`,
+			"--download",
+			"--with-toc",
+			"--dark",
 		],
 		{ cwd: `decks/${deck}` },
 	);
