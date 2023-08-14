@@ -13,6 +13,6 @@
 	},
 	"dependencies": {
 		"@slidev/cli": "^0.42.7",
-		"@slidev/theme-default": "^0.21.2"
+		"@slidev/theme-apple-basic": "^0.20.0"
 	}
 }
