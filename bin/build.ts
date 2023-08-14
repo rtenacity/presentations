@@ -4,6 +4,8 @@ import { readdir } from "node:fs/promises";
 
 const build = (deck: string) =>
 	Bun.spawn([
+		"bun",
+		"run",
 		"slidev",
 		"build",
 		"--base",
