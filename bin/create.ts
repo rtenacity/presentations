@@ -5,7 +5,9 @@ import { mkdir } from "node:fs/promises";
 const [title, project, name] = process.argv.slice(2);
 
 const id = title.toLowerCase().replace(/[/\s]/g, "-");
-const slideFile = Bun.file(`decks/${id}/slides.md`);
+const directory = `decks/${id}`;
+
+const slideFile = Bun.file(`${directory}/slides.md`);
 
 if (await slideFile.exists()) {
 	throw Error("Deck already exists");
@@ -24,11 +26,13 @@ ${title}
   <span class="font-700">
     ${name} from hack.place()
   </span>
-</div>`;
+</div>
+`;
 
 const tsconfigContent = `{
 	"extends": "../../tsconfig.json"
-}`;
+}
+`;
 
 const packageContent = `{
 	"name": "${id}",
@@ -47,12 +51,13 @@ const packageContent = `{
 		"@slidev/cli": "^0.42.7",
 		"@slidev/theme-apple-basic": "^0.20.0"
 	}
-}`;
+}
+`;
 
-await mkdir(`decks/${id}`).then(() =>
+await mkdir(directory).then(() =>
 	Promise.all([
 		Bun.write(slideFile, slideContent),
-		Bun.write(`decks/${id}/tsconfig.json`, tsconfigContent),
-		Bun.write(`decks/${id}/package.json`, packageContent),
+		Bun.write(`${directory}/tsconfig.json`, tsconfigContent),
+		Bun.write(`${directory}/package.json`, packageContent),
 	]),
 );
