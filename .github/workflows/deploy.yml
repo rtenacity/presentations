@@ -40,7 +40,9 @@ jobs:
           cache: true
 
       - name: Install Playwright Browsers
-        run: bun install -d playwright-chromium
+        run: |
+          bun install -d playwright-chromium
+          bun x playwright install
 
       - name: Install dependencies
         run: bun install
