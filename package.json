@@ -1,7 +1,8 @@
 {
 	"name": "presentations",
 	"scripts": {
-		"build": "bun run bin/build.tsx"
+		"uno": "unocss bin/build.tsx --preflights --minify --out-file dist/uno.css",
+		"build": "bun run uno && bun run bin/build.tsx"
 	},
 	"devDependencies": {
 		"bun-types": "latest",
