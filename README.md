@@ -12,6 +12,7 @@ This repository contains the presentations for **hack.place()**. Slide decks are
 - [Object-Oriented Python (Intermediate)](https://slides.hackplace.org/object-oriented-python)
 - [HTMX and APIs (Intermediate)](https://slides.hackplace.org/htmx-and-apis)
 - [Databases with ORMs (Advanced)](https://slides.hackplace.org/databases-with-orms)
+- [Minecraft Modding (Advanced)](https://slides.hackplace.org/minecraft-modding)
 
 ## Instructions
 
