@@ -1,5 +1,5 @@
 {
-	"name": "intro-to-python",
+	"name": "object-oriented-python",
 	"type": "module",
 	"scripts": {
 		"dev": "slidev --open",
