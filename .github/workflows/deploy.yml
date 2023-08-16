@@ -8,6 +8,7 @@ on:
     paths:
       - "decks/**"
       - "bin/build.tsx"
+      - ".github/workflows/**"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -40,7 +41,6 @@ jobs:
         with:
           bun-version: 0.7.3
           bun-repo: "oven-sh/bun"
-          cache: true
 
       - name: Install dependencies
         run: bun install
