@@ -1,0 +1,18 @@
+{
+	"name": "intro-to-python",
+	"type": "module",
+	"scripts": {
+		"dev": "slidev --open",
+		"build": "slidev build"
+	},
+	"devDependencies": {
+		"bun-types": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	},
+	"dependencies": {
+		"@slidev/cli": "^0.42.7",
+		"@slidev/theme-apple-basic": "^0.20.0"
+	}
+}
