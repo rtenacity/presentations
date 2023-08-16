@@ -5,7 +5,7 @@ layout: intro
 
 # Discord Bot
 
-Intro to Python
+Object-Oriented Python
 
 <div class="absolute bottom-10">
   <span class="font-700">
