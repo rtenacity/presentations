@@ -7,7 +7,7 @@ This repository contains the presentations for **hack.place()**. Slide decks are
 
 ## Content
 
-- [Intro to HTML/CSS/JS (Beginner)](https://slides.hackplace.org/intro-to-html-css-js)
+- [Intro to Web Development (Intermediate)](https://slides.hackplace.org/intro-to-html-css-js)
 - [Intro to React (Intermediate)](https://slides.hackplace.org/intro-to-react)
 - [Object-Oriented Python (Intermediate)](https://slides.hackplace.org/object-oriented-python)
 - [HTMX and APIs (Intermediate)](https://slides.hackplace.org/htmx-and-apis)
