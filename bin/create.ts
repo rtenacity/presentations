@@ -48,7 +48,7 @@ const packageContent = `{
 		"typescript": "^5.0.0"
 	},
 	"dependencies": {
-		"@slidev/cli": "^0.42.8",
+		"@slidev/cli": "^0.42.9",
 		"@slidev/theme-apple-basic": "^0.20.0"
 	}
 }
