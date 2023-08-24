@@ -2,9 +2,9 @@
 
 import { mkdir } from "node:fs/promises";
 
-const [title, project, name] = process.argv.slice(2);
+const [topic, application, name] = process.argv.slice(2);
 
-const id = title.toLowerCase().replace(/[/\s]/g, "-");
+const id = topic.toLowerCase().replace(/[/\s]/g, "-");
 const directory = `decks/${id}`;
 
 const slideFile = Bun.file(`${directory}/slides.md`);
@@ -18,9 +18,9 @@ theme: apple-basic
 layout: intro
 ---
 
-# ${project}
+# ${application}
 
-${title}
+${topic}
 
 <div class="absolute bottom-10">
   <span class="font-700">
