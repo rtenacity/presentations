@@ -1,7 +1,9 @@
 #!/usr/bin/env bun
 
-import { readdir } from "node:fs/promises";
+import { readdir, rm } from "node:fs/promises";
 import * as elements from "typed-html";
+
+const rmdirOptions = { recursive: true, force: true };
 
 const Root = ({ children }: elements.Children) => `
 	<!DOCTYPE html>
@@ -19,17 +21,19 @@ const Root = ({ children }: elements.Children) => `
 `;
 
 const Card = (deck: string) => {
-	Bun.spawn(
-		[
-			"bun",
-			"run",
-			"build",
-			"--base",
-			`/${deck}`,
-			"--out",
-			`../../dist/${deck}`,
-		],
-		{ cwd: `decks/${deck}` },
+	rm(`decks/${deck}/node_modules`, rmdirOptions).then(() =>
+		Bun.spawn(
+			[
+				"bun",
+				"run",
+				"build",
+				"--base",
+				`/${deck}`,
+				"--out",
+				`../../dist/${deck}`,
+			],
+			{ cwd: `decks/${deck}` },
+		),
 	);
 
 	return (
