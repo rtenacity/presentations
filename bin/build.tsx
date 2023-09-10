@@ -1,24 +1,22 @@
 #!/usr/bin/env bun
 
 import { readdir, rm } from "node:fs/promises";
-import * as elements from "typed-html";
+import html from "@kitajs/html";
 
 const rmdirOptions = { recursive: true, force: true };
 
-const Root = ({ children }: elements.Children) => `
-	<!DOCTYPE html>
-	<html lang="en">
-		<head>
-			<meta charset="UTF-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<title>hack.place()</title>
+const Root = ({ children }: html.PropsWithChildren) => `<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>hack.place()</title>
 
-			<link href="uno.css" rel="stylesheet" type="text/css" />
-		</head>
+		<link href="uno.css" rel="stylesheet" type="text/css" />
+	</head>
 
-		${children}
-	</html>
-`;
+	${children}
+</html>`;
 
 const Card = (deck: string) => {
 	rm(`decks/${deck}/node_modules`, rmdirOptions).then(() =>

@@ -1,21 +1,21 @@
 {
-  "name": "presentations",
-  "scripts": {
-    "uno": "unocss bin/build.tsx --preflights --minify --out-file dist/uno.css",
-    "build": "bun run uno && bun run bin/build.tsx"
-  },
-  "devDependencies": {
-    "bun-types": "latest",
-    "typed-html": "^3.0.1"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  },
-  "type": "module",
-  "workspaces": [
-    "decks/*"
-  ],
-  "dependencies": {
-    "@slidev/cli": "^0.42.9"
-  }
+	"name": "presentations",
+	"scripts": {
+		"uno": "unocss bin/build.tsx --preflights --minify --out-file dist/uno.css",
+		"build": "bun run uno && bun run bin/build.tsx"
+	},
+	"devDependencies": {
+		"bun-types": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	},
+	"type": "module",
+	"workspaces": [
+		"decks/*"
+	],
+	"dependencies": {
+		"@kitajs/html": "^1.4.7",
+		"@slidev/cli": "^0.42.9"
+	}
 }
