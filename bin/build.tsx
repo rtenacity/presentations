@@ -49,16 +49,18 @@ await readdir("decks")
 	.then((cards) =>
 		Bun.write(
 			"dist/index.html",
-			<Root>
-				<body class="bg-[#09090b] text-light flex flex-col">
-					<img
-						src="https://www.hackplace.org/icon.svg"
-						alt="hack.place() Logo"
-						class="h-48 h-28 mx-4 mb-6 mt-8"
-					/>
+			(
+				<Root>
+					<body class="bg-[#09090b] text-light flex flex-col">
+						<img
+							src="https://www.hackplace.org/icon.svg"
+							alt="hack.place() Logo"
+							class="h-48 h-28 mx-4 mb-6 mt-8"
+						/>
 
-					{cards}
-				</body>
-			</Root>,
+						{cards}
+					</body>
+				</Root>
+			) as string,
 		),
 	);

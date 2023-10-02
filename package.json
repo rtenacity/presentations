@@ -15,7 +15,7 @@
 		"decks/*"
 	],
 	"dependencies": {
-		"@kitajs/html": "^1.4.7",
+		"@kitajs/html": "^3.0.0",
 		"@slidev/cli": "^0.42.9"
 	}
 }
