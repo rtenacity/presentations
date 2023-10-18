@@ -1,5 +1,5 @@
 {
-	"name": "building-apps-with-django-and-python",
+	"name": "django",
 	"type": "module",
 	"scripts": {
 		"dev": "slidev --open",

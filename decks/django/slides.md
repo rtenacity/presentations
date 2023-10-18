@@ -3,9 +3,9 @@ theme: apple-basic
 layout: intro
 ---
 
-# Blog with CMS
+# Blog Site
 
-Building Apps with Django and Python
+Django
 
 <div class="absolute bottom-10">
   <span class="font-700">
